@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: get workdir
         run: pwd
-      -name: create new folder 
+      - name: create new folder 
         run: mkdirfolder1
 
     job2:
@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: list folder
         run: ls -al
-      -name: create new folder 
+      - name: create new folder 
         run: mkdirfolder1  
          
     job3:
@@ -31,6 +31,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      
-        -name: docker version 
-        run: docker --version
+       - name: docker version 
+         run: docker --version
