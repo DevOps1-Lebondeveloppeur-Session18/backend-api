@@ -1,4 +1,4 @@
-name: frontend pipeline
+name: frontend pipeline 
 env: 
   IMAGE_NAME: ${{ vars.DOCKERHUB_USERNAME }}/front-session18
 
