@@ -44,7 +44,10 @@ jobs:
     # Build docker image
     build-docker-image:
         runs-on: ubuntu-latest
-        needs: unit-test
+        needs: 
+        - unit-test
+        - sonarQube-test 
+
         steps:
           - name: clone repo
             uses: actions/checkout@v7
